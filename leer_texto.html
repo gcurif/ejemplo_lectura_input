@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <button onClick="mostrarWeon();">mostrar el otro weon</button>
-  <button onClick="ocultarWeon();" id="otro_weon">
-    hola, soy el otro weon y me escondo
-  </button>
+    <div>
+        <h1> Ejemplo de lectura de un input</h1>
+        <!-- se asigna un Id al input que se quiere leer (si, esto es un comentario en html) -->
+        <input id="input_de_prueba_1">
+        <button onClick="readInputAndShow();">leer</button>
+
+        <!--ignorar esto ... ¿o no 1313?-->
+        <a id="wea_oculta" href="https://codepen.io/rugido/pen/JjjoLOo">presioname 1313</a>
+
+    </div>
 </html>
 
 <script>
-  function mostrarWeon(){
-    document.getElementById("otro_weon").style.display="inline";
-  }
-  
-  function ocultarWeon(){
-    document.getElementById("otro_weon").style.display="none";
-  };
+        function readInputAndShow(){
 
+            // Obteniendo valor del input en base a su id
+            var value = document.getElementById('input_de_prueba_1').value;
+
+            // Mostrando el valor en consola y en pantalla
+            console.log("el valor es" + value);
+            alert("el valor es" + value);
+        }
 </script>
 
+
 <style>
-  #otro_weon{
-    display: none
-  }
+    #wea_oculta{
+        display: none;
+    }
+
 </style>
