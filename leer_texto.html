@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <div>
+        <h1> Ejemplo de lectura de un input</h1>
+        <!-- se asigna un Id al input que se quiere leer (si, esto es un comentario en html) -->
+        <input id="input_de_prueba_1">
+        <button onClick="readInputAndShow();">leer</button>
+    </div>
+</html>
+
+<script>
+        function readInputAndShow(){
+
+            // Obteniendo valor del input en base a su id
+            var value = document.getElementById('input_de_prueba_1').value;
+
+            // Mostrando el valor en consola y en pantalla
+            console.log("el valor es" + value);
+            alert("el valor es" + value);
+        }
+</script>
+
+
+<style>
+
+</style>
